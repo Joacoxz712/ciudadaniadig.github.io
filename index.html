@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dino Digital - Ciudadanía Digital</title>
+  <link rel="stylesheet" href="ciudadaniadig.css" />
+  <link rel="icon" href="logoCiud.png" type="image/x-icon" />
+</head>
+<body>
+  <div id="game">
+    <div id="dino">
+      <div class="dino-eye"></div>
+      <div class="dino-mouth"></div>
+    </div>
+    <div id="ground"></div>
+    <div id="clouds"></div>
+    <div id="stars"></div>
+    <div id="particles"></div>
+  </div>
+
+  <div id="score"><span id="SCORE">0/50</span> Points</div>
+  <div id="bonus">🎉 ¡Puedes seguir navegando en Scratch! 🎉</div>
+  <div id="mensaje"></div>
+
+  <div id="quiz-container" class="hidden">
+    <div id="quiz-question"></div>
+    <div id="quiz-options"></div>
+  </div>
+
+  <div id="overlay" class="hidden">
+    <div id="game-message"></div>
+    <div id="game-buttons">
+      <button onclick="reanudarJuego()">Reanudar</button>
+    </div>
+  </div>
+
+  <div id="start-menu">
+    <div id="welcome-message">¡Bienvenido al Juego de Ciudadanía Digital! 🌐</div>
+    <div id="start-animation"></div>
+    <button id="start-button">Comenzar</button>
+  </div>
+
+  <div id="fall-overlay" class="hidden">
+    <div id="fall-message">Perdiste, pero lo puedes volver a intentar tranquilo 😌</div>
+    <button onclick="reanudarJuego()">Reintentar</button>
+  </div>
+
+  <script src="ciudadaniadig.js"></script>
+</body>
+</html>
